@@ -1,0 +1,282 @@
+.important{
+  z-index: 10;
+}
+
+.less-important{
+  z-index: 1;
+}
+
+.climber{
+  height: 25%;
+  width: 100%;
+  -webkit-filter: grayscale(1);
+  transition: 0.3s;
+}
+
+.climber:hover{
+  -webkit-filter: grayscale(0);
+}
+
+.climber-main{
+  position: relative;
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  overflow-y: auto;
+  max-width: 50%;
+  padding: 0;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.intro{
+  position: absolute;
+  top: 0;
+  background-color: red;
+  height:75%;
+  width:50%;
+
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  text-align: center;
+  color: #F7CAC9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: normal;
+  width: 100%;
+  margin-left: 0%;
+}
+
+h3 {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align:left;
+  color: #000ad1;
+}
+
+
+h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000ad1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+small {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000ad1;
+  padding-bottom: 10px;
+}
+
+.intro-text{
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #F7CAC9;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  padding-right: 3vw;
+  padding-left: 3vw;
+
+}
+
+.nav-link{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline block;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+  font-color: #000ad1;
+  background-color: #F7CAC9;
+}
+
+p {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #00000;
+  padding-top: 10px;
+}
+
+.climber:hover h3  { background-color: #F7CAC9; }
+
+/*Important:*/
+.link-spanner{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+.climber-bio{
+  position: relative;
+  background-color: #F7CAC9;
+  height:75%;
+  width:100%;
+}
+
+.text{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  padding-left: : 1vw;
+  padding-right: 1vw;
+}
+
+
+.sub-nav{
+  position: absolute;
+  bottom: 0;
+  background-color: #000ad1;
+  height:25%;
+  width:50%;
+  text-align: center;
+}
+
+.sub-nav-main{
+  position: relative;
+  background-color: #F7CAC9;
+  height:25%;
+  width:100%;
+}
+
+
+.sub-nav-text{
+  position: absolute;
+  top: 50%; left: 0%;
+  transform: translate(40%,-50%);
+}
+
+.sub-nav-text-main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.climber-image-holder{
+    position:relative;
+    height: 100%;
+    overflow-y: auto;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.myImage {
+    position:relative;
+    left:0;
+    top:0;
+    width:100%;
+    -webkit-filter: grayscale(1);
+    transition: 0.3s;
+}
+
+.myImage:hover {
+    -webkit-filter: grayscale(0);
+}
+
+#futaba{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/futaba.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: 0.3s;
+}
+
+#ashima{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/ashima.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#miho{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/miho.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#shauna{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/shauna.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#lynn{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/lynn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+#akiyo{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/akiyo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#janja{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/janja.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#jain{
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/jain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}

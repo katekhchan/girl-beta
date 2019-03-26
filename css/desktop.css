@@ -18,12 +18,13 @@
 }
 
 .climber-main{
-  position:relative;
+  position: relative;
+  left: 50%;
+  top: 0%;
   height: 100%;
   overflow-y: auto;
-  max-width: 100%;
+  max-width: 50%;
   padding: 0;
-  margin: 0;
 }
 
 .no-gutter > [class*='col-'] {
@@ -34,23 +35,26 @@
 }
 
 .intro{
-  position: relative;
+  position: absolute;
+  top: 0;
   background-color: #000ad1;
   height:75%;
-  width:100%;
+  width:50%;
 
 }
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 70px;
   text-align: center;
   color: #F7CAC9;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: normal;
+  width: 100%;
+  margin-left: 0%;
 }
 
 h3 {
@@ -90,6 +94,11 @@ small {
   font-size: 20px;
   color: #F7CAC9;
   text-align: center;
+  width: 100%;
+  left: 0;
+  padding-right: 3vw;
+  padding-left: 3vw;
+
 }
 
 .nav-link{
@@ -141,14 +150,18 @@ p {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%);
+  padding-left: : 1vw;
+  padding-right: 1vw;
 }
 
 
 .sub-nav{
-  position: relative;
+  position: absolute;
+  bottom: 0;
   background-color: #000ad1;
   height:25%;
-  width:100%;
+  width:50%;
+  text-align: center;
 }
 
 .sub-nav-main{
@@ -167,8 +180,9 @@ p {
 
 .sub-nav-text-main{
   position: absolute;
-  top: 50%; left: 0%;
-  transform: translate(50%,-60%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .climber-image-holder{
