@@ -87,6 +87,10 @@ small {
   padding-bottom: 10px;
 }
 
+.mobile-only{
+  display: none;
+}
+
 .intro-text{
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
