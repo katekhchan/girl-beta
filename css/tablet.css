@@ -9,22 +9,20 @@
 .climber{
   height: 25%;
   width: 100%;
-  -webkit-filter: grayscale(1);
-  transition: 0.3s;
-}
-
-.climber:hover{
-  -webkit-filter: grayscale(0);
 }
 
 .climber-main{
+  float: left;
   position: relative;
-  left: 50%;
-  top: 0%;
-  height: 100%;
+  bottom: 0%;
+  height: 90%;
   overflow-y: auto;
-  max-width: 50%;
+  width: 100%;
   padding: 0;
+}
+
+.climber-main::-webkit-scrollbar {
+    display: none;
 }
 
 .no-gutter > [class*='col-'] {
@@ -35,18 +33,19 @@
 }
 
 .intro{
-  position: absolute;
+  float: left;
+  position: relative;
   top: 0;
-  background-color: red;
-  height:75%;
-  width:50%;
+  background-color: #000ad1;
+  height:90%;
+  width:100%;
 
 }
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  font-size: 70px;
+  font-size: 80px;
   text-align: center;
   color: #F7CAC9;
   overflow: hidden;
@@ -66,6 +65,7 @@ h3 {
   font-size: 30px;
   text-align:left;
   color: #000ad1;
+  background-color: #F7CAC9;
 }
 
 
@@ -87,17 +87,33 @@ small {
   padding-bottom: 10px;
 }
 
+#mobile-intro
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+
+
+
 .intro-text{
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 22px;
   color: #F7CAC9;
   text-align: center;
   width: 100%;
   left: 0;
   padding-right: 3vw;
   padding-left: 3vw;
+  padding-bottom: 10px;
+  margin-bottom: 2vh;
 
 }
 
@@ -105,14 +121,14 @@ small {
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   display: inline block;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
-.nav-link:hover{
+.nav-link:hover .nav-link:focus{
   text-decoration: none;
   font-color: #000ad1;
   background-color: #F7CAC9;
@@ -152,15 +168,17 @@ p {
   transform: translate(-50%,-50%);
   padding-left: : 1vw;
   padding-right: 1vw;
+  text-align:center;
 }
 
 
 .sub-nav{
-  position: absolute;
+  float: left;
+  position: relative;
   bottom: 0;
   background-color: #000ad1;
-  height:25%;
-  width:50%;
+  height:10%;
+  width:100%;
   text-align: center;
 }
 
@@ -183,6 +201,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%
 }
 
 .climber-image-holder{
@@ -199,84 +218,199 @@ p {
     left:0;
     top:0;
     width:100%;
-    -webkit-filter: grayscale(1);
     transition: 0.3s;
 }
+
 
 .myImage:hover {
     -webkit-filter: grayscale(0);
 }
 
 #futaba{
+  position: relative;
+}
+
+#futaba::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/futaba.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  transition: 0.3s;
+  filter: grayscale(100%);
 }
 
+#futaba-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
 #ashima{
+  position: relative;
+}
+
+#ashima::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/ashima.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+#ashima-inside {
+  /* This will make it stack on top of the ::before */
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 #miho{
+  position: relative;
+}
+
+#miho::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/miho.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+#miho-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+#shauna{
   position: relative;
 }
 
-#shauna{
+#shauna::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/shauna.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+#shauna-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+#lynn{
   position: relative;
 }
 
-#lynn{
+#lynn::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/lynn.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+#lynn-inside {
+  /* This will make it stack on top of the ::before */
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 
 #akiyo{
+  position: relative;
+}
+
+#akiyo::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/akiyo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+#akiyo-inside {
+  /* This will make it stack on top of the ::before */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+#janja{
   position: relative;
 }
 
-#janja{
+#janja::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/janja.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+#janja-inside {
+  /* This will make it stack on top of the ::before */
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 #jain{
+  position: relative;
+}
+
+#jain::before{
   height: 100%;
   width: 100%;
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
   background-image: url(../img/jain.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+#jain-inside {
+  /* This will make it stack on top of the ::before */
   position: relative;
+  width: 100%;
+  height: 100%;
 }
