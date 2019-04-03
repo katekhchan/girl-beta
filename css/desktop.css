@@ -144,10 +144,11 @@ p {
 }
 
 .climber-bio{
-  position: relative;
+  position: absolute;
+  top: 0;
   background-color: #F7CAC9;
-  height:75%;
-  width:100%;
+  height: 75%;
+  width: 50%;
 }
 
 .text{
@@ -190,12 +191,13 @@ p {
 }
 
 .climber-image-holder{
-    position:relative;
-    height: 100%;
-    overflow-y: auto;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
+  position: relative;
+  left: 50%;
+  top: 0%;
+  height: 100%;
+  overflow-y: auto;
+  max-width: 50%;
+  padding: 0
 }
 
 .myImage {
